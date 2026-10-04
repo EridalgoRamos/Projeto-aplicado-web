@@ -14,6 +14,9 @@ A arquitetura está dividida em três eixos técnicos perfeitamente integrados a
 
 ## 🏗️ Arquitetura e eixos tecnológicos
 
+
+![Diagrama dos 3 Eixos](image_1.png)
+
 ### ☁️ Eixo 1: Infraestrutura Cloud & Segurança
 Servidor alojado na **Oracle Cloud Infrastructure (Free Tier)**, configurado com foco em defesa em profundidade e princípio do menor privilégio.
 * **Sistema Operativo:** Ubuntu Server.
@@ -35,6 +38,9 @@ Protótipo de software seguro desenvolvido em Python/Flask, concebido com a assi
 ---
 
 ## 🔄 Automação (CI/CD)
+
+
+![Diagrama da Pipeline de Implantação](image_2.png)
 O fluxo de *deploy* está 100% automatizado via **GitHub Actions**. Quando um novo *commit* é enviado para o *branch* `main`, a pipeline é acionada:
 1. Valida o ambiente de execução.
 2. Estabelece ligação segura por SSH à instância da Oracle Cloud utilizando credenciais encriptadas.
