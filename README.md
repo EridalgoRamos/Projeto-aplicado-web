@@ -1,4 +1,4 @@
-# 🛡️ Projeto Aplicado: Forense de Rede & Práticas de Mercado
+# 🛡️ Projeto Aplicado: Práticas de Mercado
 
 ![Status](https://img.shields.io/badge/Status-Produção-success)
 ![Segurança](https://img.shields.io/badge/Segurança-OWASP_Top_10-blue)
