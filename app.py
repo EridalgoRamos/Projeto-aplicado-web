@@ -11,8 +11,10 @@ app.secret_key = 'chave_super_secreta_projeto_uncisal'
 # OWASP A02: Falhas Criptográficas (Cryptographic Failures)
 # A senha 'admin123' nunca é salva ou comparada em texto puro.
 # ==============================================================================
-ADMIN_USER = 'admin'
-ADMIN_HASH = generate_password_hash('admin123')
+with open('.credenciais', 'r') as f:
+    credenciais = f.read().splitlines()
+    ADMIN_USER = credenciais[0]
+    ADMIN_HASH = generate_password_hash(credenciais[1])
 
 # ==============================================================================
 # OWASP A01: Quebra de Controle de Acesso (Broken Access Control)
